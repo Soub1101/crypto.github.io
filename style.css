@@ -1,0 +1,119 @@
+/* Add animation styles */
+.cryptoBox {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.cryptoBox.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f8fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    color: #2980b9;
+}
+
+.container p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #34495e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.cryptoBox {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cryptoBox h3 {
+    margin-top: 0;
+}
+
+.exchangeValues {
+    margin-bottom: 10px;
+}
+
+.exchangeValues p {
+    margin: 5px 0;
+}
+
+canvas {
+    margin-bottom: 10px;
+}
+
+.graphBtn {
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.graphBtn:hover {
+    background-color: #1c6fa8;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Exchange Rates</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="super.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="logo 1.png" alt="Crypto Exchange Logo" class="logo">
+            <a><h1>Crypto Exchange Rates</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="#exchangeRates">Exchange Rates</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="exchangeRates">
+            <div class="container">
+                <h2>Exchange Rates</h2>
+                <!-- Crypto boxes will be dynamically generated here -->
+                <div id="bitcoin" class="cryptoBox">
+                    <h3>Bitcoin</h3>
+                    <div class="exchangeValues">
+                        <p class="inrValue">INR: Loading...</p>
+                        <p class="usdValue">USD: Loading...</p>
+                    </div>
+                    <canvas id="bitcoinChart" width="400" height="200"></canvas>
+                    <button class="graphBtn" data-crypto="bitcoin" data-period="1year">1 Year</button>
+                    <button class="graphBtn" data-crypto="bitcoin" data-period="10months">10 Months</button>
+                    <button class="graphBtn" data-crypto="bitcoin" data-period="6months">6 Months</button>
+                    <button class="graphBtn" data-crypto="bitcoin" data-period="1month">1 Month</button>
+                    <button class="graphBtn" data-crypto="bitcoin" data-period="present">Present</button>
+                </div>
+                <div id="ethereum" class="cryptoBox">
+                    <h3>Ethereum</h3>
+                    <div class="exchangeValues">
+                        <p class="inrValue">INR: Loading...</p>
+                        <p class="usdValue">USD: Loading...</p>
+                    </div>
+                    <canvas id="ethereumChart" width="400" height="200"></canvas>
+                    <button class="graphBtn" data-crypto="ethereum" data-period="1year">1 Year</button>
+                    <button class="graphBtn" data-crypto="ethereum" data-period="10months">10 Months</button>
+                    <button class="graphBtn" data-crypto="ethereum" data-period="6months">6 Months</button>
+                    <button class="graphBtn" data-crypto="ethereum" data-period="1month">1 Month</button>
+                    <button class="graphBtn" data-crypto="ethereum" data-period="present">Present</button>
+                </div>
+                <div id="litecoin" class="cryptoBox">
+                    <h3>Litecoin</h3>
+                    <div class="exchangeValues">
+                        <p class="inrValue">INR: Loading...</p>
+                        <p class="usdValue">USD: Loading...</p>
+                    </div>
+                    <canvas id="litecoinChart" width="400" height="200"></canvas>
+                    <button class="graphBtn" data-crypto="litecoin" data-period="1year">1 Year</button>
+                    <button class="graphBtn" data-crypto="litecoin" data-period="10months">10 Months</button>
+                    <button class="graphBtn" data-crypto="litecoin" data-period="6months">6 Months</button>
+                    <button class="graphBtn" data-crypto="litecoin" data-period="1month">1 Month</button>
+                    <button class="graphBtn" data-crypto="litecoin" data-period="present">Present</button>
+                </div>
+                <div id="ripple" class="cryptoBox">
+                    <h3>Ripple</h3>
+                    <div class="exchangeValues">
+                        <p class="inrValue">INR: Loading...</p>
+                        <p class="usdValue">USD: Loading...</p>
+                    </div>
+                    <canvas id="rippleChart" width="400" height="200"></canvas>
+                    <button class="graphBtn" data-crypto="ripple" data-period="1year">1 Year</button>
+                    <button class="graphBtn" data-crypto="ripple" data-period="10months">10 Months</button>
+                    <button class="graphBtn" data-crypto="ripple" data-period="6months">6 Months</button>
+                    <button class="graphBtn" data-crypto="ripple" data-period="1month">1 Month</button>
+                    <button class="graphBtn" data-crypto="ripple" data-period="present">Present</button>
+                </div>
+                <div id="stellar" class="cryptoBox">
+                    <h3>Stellar</h3>
+                    <div class="exchangeValues">
+                        <p class="inrValue">INR: Loading...</p>
+                        <p class="usdValue">USD: Loading...</p>
+                    </div>
+                    <canvas id="stellarChart" width="400" height="200"></canvas>
+                    <button class="graphBtn" data-crypto="stellar" data-period="1year">1 Year</button>
+                    <button class="graphBtn" data-crypto="stellar" data-period="10months">10 Months</button>
+                    <button class="graphBtn" data-crypto="stellar" data-period="6months">6 Months</button>
+                    <button class="graphBtn" data-crypto="stellar" data-period="1month">1 Month</button>
+                    <button class="graphBtn" data-crypto="stellar" data-period="present">Present</button>
+                </div>
+                <div id="bitcoinCash" class="cryptoBox">
+                    <h3>Bitcoin Cash</h3>
+                    <div class="exchangeValues">
+                        <p class="inrValue">INR: Loading...</p>
+                        <p class="usdValue">USD: Loading...</p>
+                    </div>
+                    <canvas id="bitcoinCashChart" width="400" height="200"></canvas>
+                    <button class="graphBtn" data-crypto="bitcoin-cash" data-period="1year">1 Year</button>
+                    <button class="graphBtn" data-crypto="bitcoin-cash" data-period="10months">10 Months</button>
+                    <button class="graphBtn" data-crypto="bitcoin-cash" data-period="6months">6 Months</button>
+                    <button class="graphBtn" data-crypto="bitcoin-cash" data-period="1month">1 Month</button>
+                    <button class="graphBtn" data-crypto="bitcoin-cash" data-period="present">Present</button>
+                </div>
+                <!-- Add more crypto boxes for other cryptocurrencies -->
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>
+                    Crypto Exchange Rates
+
+                    Welcome to Crypto Exchange Rates, your premier destination for secure and efficient cryptocurrency
+                    trading. At Crypto Exchange Rates, we are dedicated to providing users with a seamless platform to
+                    buy, sell, and trade digital assets with confidence. Here's what sets us apart:</p>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>For inquiries or support, please contact us at:</p>
+                <p>Email: sb9140@srmist.edu.in</p>
+                <p>Phone: 8128125638</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Crypto Exchange Rates</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
